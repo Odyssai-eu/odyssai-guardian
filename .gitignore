@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+data/contextual_train.jsonl
+*.log
+*.err
+
+# Internal working docs — kept on the forge, NOT shipped to the public release.
+/docs/
+/HANDOFF.md
+/MEMORY.md
+/CLAUDE.md
+/AGENTS.md

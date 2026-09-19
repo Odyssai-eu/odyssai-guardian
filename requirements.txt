@@ -1,0 +1,9 @@
+# Stage 1 — PII / GDPR-identification
+gliner2
+
+# Service
+fastapi
+uvicorn[standard]
+
+# Stage 2 — contextual (direct LLM call over an OpenAI-compatible endpoint)
+openai

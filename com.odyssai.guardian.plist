@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.odyssai.guardian</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>__INSTALL_DIR__/.venv/bin/uvicorn</string>
+        <string>server:app</string>
+        <string>--host</string>
+        <string>0.0.0.0</string>
+        <string>--port</string>
+        <string>8084</string>
+    </array>
+    <key>WorkingDirectory</key>
+    <string>__INSTALL_DIR__</string>
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>__INSTALL_DIR__/.venv/bin:/usr/bin:/bin</string>
+        <key>VIRTUAL_ENV</key>
+        <string>__INSTALL_DIR__/.venv</string>
+        <!-- GLiNER never fetches at boot; the model is pre-downloaded at install. -->
+        <key>HF_HUB_OFFLINE</key>
+        <string>1</string>
+        <!-- No LLM endpoint here. The stage-2 endpoint is supplied per request
+             by the caller (the add-on's "Contextual LLM endpoint" field).
+             Zero hardcoded IP by design. -->
+    </dict>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+    <key>StandardOutPath</key>
+    <string>__INSTALL_DIR__/guardian.log</string>
+    <key>StandardErrorPath</key>
+    <string>__INSTALL_DIR__/guardian.err</string>
+</dict>
+</plist>
