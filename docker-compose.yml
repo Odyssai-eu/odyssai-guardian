@@ -1,0 +1,23 @@
+# Odyssai Guardian — one-command install.
+#   docker compose up -d
+# Brings the detection sidecar on :8084 with the GLiNER model + DSPy program
+# already baked into the image. Point the CoeOS add-on's "Guard service
+# URL" at http://<host>:8084/guard (or http://guardian:8084/guard when
+# CoeOS runs on the same docker network).
+#
+# There is NOTHING to configure here: the stage-2 LLM endpoint is supplied by
+# the caller per request (the add-on's "Contextual LLM endpoint" field). Zero
+# hardcoded IP.
+services:
+  guardian:
+    build: .
+    image: odyssai-guardian:latest
+    container_name: odyssai-guardian
+    ports:
+      - "8084:8084"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:8084/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3

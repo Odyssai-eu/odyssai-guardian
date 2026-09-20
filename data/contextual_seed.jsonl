@@ -1,0 +1,24 @@
+{"text": "On perd le client Airbus, il signe chez Thales pour 2,4M la semaine prochaine.", "label": "sensitive", "category": "business_secret", "why": "perte client + montant deal non public"}
+{"text": "Le taux de churn réel de notre SaaS est de 34%, on le cache aux investisseurs.", "label": "sensitive", "category": "business_secret", "why": "métrique interne dissimulée"}
+{"text": "Our Q3 numbers are down 20%, we're hiding it from the board until after the funding round.", "label": "sensitive", "category": "business_secret", "why": "undisclosed financials, concealment"}
+{"text": "Mon père vient d'être diagnostiqué avec un cancer du pancréas stade 4, il lui reste quelques mois.", "label": "sensitive", "category": "health_narrative", "why": "diagnostic médical d'un tiers, santé sensible"}
+{"text": "Je fais une dépression sévère depuis six mois et je suis sous antidépresseurs, ne le dis à personne.", "label": "sensitive", "category": "health_narrative", "why": "état de santé mentale + traitement, demande de confidentialité"}
+{"text": "Ma collègue est enceinte mais ne l'a pas encore annoncé à la direction.", "label": "sensitive", "category": "health_narrative", "why": "info santé/vie privée d'un tiers non divulguée"}
+{"text": "On va licencier Marc et Julie au prochain trimestre, ils ne sont pas encore au courant.", "label": "sensitive", "category": "hr_personal", "why": "décision RH nominative non communiquée"}
+{"text": "Le salaire de notre nouveau CTO est de 180k plus 2% d'equity, c'est confidentiel.", "label": "sensitive", "category": "hr_personal", "why": "rémunération individuelle confidentielle"}
+{"text": "Notre avocat pense qu'on va perdre le procès contre Dupont SA, exposition estimée à 5M.", "label": "sensitive", "category": "legal_confidential", "why": "position juridique + exposition financière, secret pro"}
+{"text": "On négocie un règlement à l'amiable secret dans l'affaire de harcèlement, 300k.", "label": "sensitive", "category": "legal_confidential", "why": "règlement confidentiel, sujet sensible"}
+{"text": "Notre plan est d'acquérir la startup concurrente avant qu'elle lève sa série B.", "label": "sensitive", "category": "strategy_internal", "why": "stratégie M&A non publique"}
+{"text": "On prévoit de fermer le bureau de Lyon en décembre et délocaliser en Pologne.", "label": "sensitive", "category": "strategy_internal", "why": "décision stratégique interne non annoncée"}
+{"text": "Explique-moi comment fonctionne le churn dans un SaaS.", "label": "clean", "category": "none", "why": "question générale, aucune donnée interne"}
+{"text": "Quels sont les symptômes généraux d'une dépression ?", "label": "clean", "category": "none", "why": "question santé générique, pas de cas personnel"}
+{"text": "Comment une entreprise procède-t-elle à un licenciement économique en France ?", "label": "clean", "category": "none", "why": "question procédurale générale"}
+{"text": "Quels sont les stades du cancer en oncologie, en général ?", "label": "clean", "category": "none", "why": "question médicale générique, pas de patient réel"}
+{"text": "Comment négocier son salaire lors d'un entretien d'embauche ?", "label": "clean", "category": "none", "why": "conseil générique, aucune rémunération réelle"}
+{"text": "Écris-moi une fonction Python qui calcule la médiane d'une liste.", "label": "clean", "category": "none", "why": "demande technique neutre"}
+{"text": "Raconte-moi une histoire sur un robot qui découvre l'amitié.", "label": "clean", "category": "none", "why": "demande créative"}
+{"text": "What are the side effects of ibuprofen?", "label": "clean", "category": "none", "why": "generic drug question, no personal case"}
+{"text": "Résume-moi les grandes lignes du RGPD.", "label": "clean", "category": "none", "why": "question informative générale"}
+{"text": "Bonjour, comment vas-tu aujourd'hui ?", "label": "clean", "category": "none", "why": "small talk"}
+{"text": "Translate 'the quarterly report is due friday' into French.", "label": "clean", "category": "none", "why": "traduction neutre, pas de contenu du rapport"}
+{"text": "Donne-moi des conseils pour gérer le stress au travail.", "label": "clean", "category": "none", "why": "conseil générique bien-être"}
